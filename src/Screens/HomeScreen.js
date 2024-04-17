@@ -3,7 +3,7 @@ import { Box, Text } from "native-base";
 import React, { useEffect } from "react";
 
 function HomeScreen() {
-  return <></>;
+  return <Text>Let's do this</Text>;
 }
 
 export default HomeScreen;
