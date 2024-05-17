@@ -1,5 +1,6 @@
+import { Text } from "native-base";
 import React from "react";
 
 export default function LogScreen() {
-  return <div>LogScreen</div>;
+  return <Text>LogScreen</Text>;
 }
