@@ -2,6 +2,7 @@ import React from "react";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import HomeScreen from "../Screens/HomeScreen";
 import SingleClientVisits from "../Screens/SingleClientVisits";
+import CreateNewVisit from "../Screens/CreateNewVisit";
 
 const Stack = createNativeStackNavigator();
 
@@ -19,6 +20,7 @@ const StackNav = () => {
         initialParams={{ keyword: "" }}
       />
       <Stack.Screen name="SingleClientVisits" component={SingleClientVisits} />
+      <Stack.Screen name="CreateNewVisit" component={CreateNewVisit} />
       {/* <Stack.Screen name="Shipping" component={ShoppingScreen} />
         <Stack.Screen name="CheckOut" component={PaymentScreen} />
         <Stack.Screen name="PlaceOrder" component={PlaceOrderScreen} />

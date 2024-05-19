@@ -1,10 +1,13 @@
 import { AntDesign, FontAwesome } from "@expo/vector-icons";
-import { Box, Center, HStack, Text, VStack } from "native-base";
+import { useNavigation } from "@react-navigation/native";
+import { Box, Button, Center, HStack, Text, VStack } from "native-base";
 import React from "react";
 
 export default function SingleClientVisits() {
+  const navigation = useNavigation();
+
   return (
-    <Box>
+    <Box flex={1} safeAreaTop>
       <HStack>
         <Center>
           <FontAwesome
@@ -54,6 +57,9 @@ export default function SingleClientVisits() {
           />
         </>
       </HStack>
+      <Button onPress={() => navigation.navigate("CreateNewVisit")}>
+        <Text>Start Visit</Text>
+      </Button>
     </Box>
   );
 }
