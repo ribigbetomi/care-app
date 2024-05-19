@@ -1,11 +1,15 @@
-import { Box, HStack, Text, VStack } from "native-base";
+import { useNavigation } from "@react-navigation/native";
+import { Box, HStack, Pressable, Text, VStack } from "native-base";
 
 const CreateNewVisit = () => {
+  const navigation = useNavigation();
   return (
     <Box>
       <VStack>
-        <Text>Start Morning Visit</Text>
-        <Text>7:30-8:30</Text>
+        <Pressable onPress={() => navigation.navigate("NewVisit")}>
+          <Text>Start Morning Visit</Text>
+          <Text>7:30-8:30</Text>
+        </Pressable>
       </VStack>
       <VStack>
         <Text>Start Lunch Visit</Text>
